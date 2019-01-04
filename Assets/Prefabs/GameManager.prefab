@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &643388299455762644
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 643388299455762647}
+  - component: {fileID: 643388299455762646}
+  - component: {fileID: 643388299455762645}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &643388299455762647
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643388299455762644}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &643388299455762646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643388299455762644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a44032e51470ad64fafa8c6a7c2d0296, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  columns: 7
+  rows: 7
+  player: {fileID: 5849834072996853931, guid: 774b4438ba1acb94c9027ca9b95aa2d4, type: 3}
+  exit:
+  - {fileID: 138610056672754188, guid: fd6ef060f4ea83a4b9184c3e3da45856, type: 3}
+  floorTiles:
+  - {fileID: 25959672036717822, guid: 8718e10c1487e2c43907557e0d1ef0f4, type: 3}
+  - {fileID: 1434202727007431273, guid: ef8718034ce47ca46b0c2d9258b60c06, type: 3}
+  rockTiles:
+  - {fileID: 7359941602259958730, guid: 93291dfef2c86be4fb56376812dfd144, type: 3}
+  sunflowerTiles:
+  - {fileID: 1204494790067339904, guid: 727642869bedc4d4e981a6a49bae202f, type: 3}
+  trapTiles:
+  - {fileID: 4565568754385191216, guid: 62c7dc5ddb921a14a9448a4fcd9d68e5, type: 3}
+  squirrelTiles:
+  - {fileID: 1860617753881973793, guid: ec0bdec56d4de6645a13e7d8589d037c, type: 3}
+  levels:
+  - {fileID: 4900000, guid: d0c0e636c33f0c04aa056b5d8cf161b4, type: 3}
+  season: 0
+  sunflowersRequired: 0
+--- !u!114 &643388299455762645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643388299455762644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8e4505ffa3d0cc4799fbd9388afd4e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelStartDelay: 2
+  turnDelay: 0.1
+  boardScript: {fileID: 643388299455762646}

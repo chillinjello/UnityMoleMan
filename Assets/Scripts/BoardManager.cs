@@ -149,31 +149,31 @@ public class BoardManager : MonoBehaviour
                         break;
                     case (int)ObjectTypes.ROCK:
                         tileChoice = rockTiles[Random.Range(0, rockTiles.Length)];
-                        Instantiate(tileChoice, new Vector3(x,y,0f), Quaternion.identity);
+                        Instantiate(tileChoice, new Vector3(y,rows - x - 1,0f), Quaternion.identity);
                         break;
                     case (int)ObjectTypes.SUNFLOWER:
                         tileChoice = sunflowerTiles[Random.Range(0, sunflowerTiles.Length)];
-                        Instantiate(tileChoice, new Vector3(x, y, 0f), Quaternion.identity);
+                        Instantiate(tileChoice, new Vector3(y, rows - x - 1, 0f), Quaternion.identity);
                         break;
                     case (int)ObjectTypes.SQUIRREL:
                         tileChoice = squirrelTiles[Random.Range(0, squirrelTiles.Length)];
-                        Instantiate(tileChoice, new Vector3(x, y, 0f), Quaternion.identity);
+                        Instantiate(tileChoice, new Vector3(y, rows - x - 1, 0f), Quaternion.identity);
                         break;
                     case (int)ObjectTypes.TRAP:
                         tileChoice = trapTiles[Random.Range(0, trapTiles.Length)];
-                        Instantiate(tileChoice, new Vector3(x, y, 0f), Quaternion.identity);
+                        Instantiate(tileChoice, new Vector3(y, rows - x - 1, 0f), Quaternion.identity);
                         break;
                     case (int)ObjectTypes.HOLE:
                         tileChoice = exit[Random.Range(0, exit.Length)];
-                        Instantiate(tileChoice, new Vector3(x, y, 0f), Quaternion.identity);
+                        Instantiate(tileChoice, new Vector3(y, rows - x - 1, 0f), Quaternion.identity);
                         break;
                     case MOLE:
-                        Instantiate(player, new Vector3(x, y, 0f), Quaternion.identity);
+                        Instantiate(player, new Vector3(y, rows - x - 1, 0f), Quaternion.identity);
                         break;
                     case MOLE_HOLE:
                         tileChoice = exit[Random.Range(0, exit.Length)];
-                        Instantiate(tileChoice, new Vector3(x, y, 0f), Quaternion.identity);
-                        Instantiate(player, new Vector3(x, y, 0f), Quaternion.identity);
+                        Instantiate(tileChoice, new Vector3(y, rows - x - 1, 0f), Quaternion.identity);
+                        Instantiate(player, new Vector3(y, rows - x - 1, 0f), Quaternion.identity);
                         break;
                     default:
                         Debug.Log("Trying to add a invalid object type to the game");

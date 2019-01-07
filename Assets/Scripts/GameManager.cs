@@ -6,9 +6,10 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public float levelStartDelay = 2f;
-    public float turnDelay = 0.1f;
+    public float turnDelay = 0.5f;
     public static GameManager instance = null;
     public BoardManager boardScript;
+    [HideInInspector] public bool playersTurn = true;
 
     private int level = 0;
     private bool doingSetup;
@@ -56,6 +57,20 @@ public class GameManager : MonoBehaviour
     
     private void Update()
     {
-        //empty for now
+        if (playersTurn || doingSetup)
+            return;
+
+        StartCoroutine(nextTurn());
+    }
+
+    IEnumerator nextTurn()
+    {
+        doingSetup = true;
+        yield return new WaitForSeconds(turnDelay);
+
+        yield return new WaitForSeconds(turnDelay);
+
+        playersTurn = true;
+        doingSetup = false;
     }
 }

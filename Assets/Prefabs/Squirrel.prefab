@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1860617753881973799}
   - component: {fileID: 1860617753881973798}
   - component: {fileID: 2942662500750957398}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Squirrel
   m_TagString: Squirrel
   m_Icon: {fileID: 0}

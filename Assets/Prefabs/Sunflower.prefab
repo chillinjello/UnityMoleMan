@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1204494790067339917}
   - component: {fileID: 1204494790067339906}
   - component: {fileID: 1204494790067339907}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Sunflower
   m_TagString: Sunflower
   m_Icon: {fileID: 0}
